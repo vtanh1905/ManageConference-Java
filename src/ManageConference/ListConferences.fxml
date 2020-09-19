@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="544.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="12.0" layoutY="15.0" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #EBE8F9;">
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="228.0" text="Tên">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="365.0" text="Địa điểm">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="205.0" text="Thời gian">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox fx:id="conListConferences" layoutX="14.0" layoutY="83.0" prefHeight="430.0" prefWidth="800.0" style="-fx-background-color: #EBE8F9;" />
+   </children>
+</AnchorPane>

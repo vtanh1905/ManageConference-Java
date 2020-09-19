@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="conCardConference" onMouseClicked="#onAction_conCardConference" prefHeight="181.0" prefWidth="237.0" style="-fx-background-color: whitesmoke; -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 0, 5);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblTen" layoutX="7.0" layoutY="95.0" text="WebSumit">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <ImageView fx:id="imgConference" fitHeight="91.0" fitWidth="267.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/conference_1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDiaChi" alignment="TOP_LEFT" layoutX="9.0" layoutY="122.0" prefHeight="37.0" prefWidth="236.0" text="940 Âu cơ, P.14, Q.Tân Bình, Tp.HCM" />
+      <Label fx:id="lblThoiGian" layoutX="9.0" layoutY="141.0" text="8:00 - 18:00 19/03/2023" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

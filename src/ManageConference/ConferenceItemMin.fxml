@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onMouseClicked="#onAction_ConferenceItemMix" prefHeight="30.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox layoutY="3.0" prefHeight="45.0" prefWidth="800.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 0 0 2 0;">
+            <children>
+                <Label fx:id="lblTen" alignment="CENTER" prefHeight="45.0" prefWidth="228.0" text="Tên">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblDiaDiem" alignment="CENTER" prefHeight="45.0" prefWidth="365.0" text="Địa điểm">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblThoiGian" alignment="CENTER" prefHeight="45.0" prefWidth="205.0" text="Thời gian">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+.image-radius {
+    -fx-padding: 30px;
+    -fx-background-radius: 1000;
+    -fx-background-color: red;
+}
+
+.btn-page{
+    -fx-background-color: "#EBE8F9";
+    -fx-border-width: 0;
+}
+
+
+.btn-page:pressed{
+    -fx-background-color: #b2b1ba!important;
+}

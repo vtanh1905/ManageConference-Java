@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="nodeRoot" hbarPolicy="NEVER" prefHeight="615.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1580.0" prefWidth="830.0">
+         <children>
+            <Label layoutX="18.0" layoutY="18.0" text="Thông tin hội nghị">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="70.0" text="Tên">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTen" layoutX="18.0" layoutY="101.0" prefHeight="25.0" prefWidth="778.0" />
+            <Label layoutX="18.0" layoutY="140.0" text="Giới thiệu">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtGioiThieu" layoutX="18.0" layoutY="171.0" prefHeight="104.0" prefWidth="777.0" />
+            <Label layoutX="18.0" layoutY="295.0" text="Chi tiết">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtChiTiet" layoutX="18.0" layoutY="323.0" prefHeight="200.0" prefWidth="777.0" wrapText="true" />
+            <Label layoutX="23.0" layoutY="529.0" text="Hình ảnh">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgConference" fitHeight="148.0" fitWidth="784.0" layoutX="23.0" layoutY="559.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/conferences/no-image.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="19.0" layoutY="757.0" text="Địa điểm">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbbDiaDiem" layoutX="19.0" layoutY="782.0" prefHeight="25.0" prefWidth="784.0" />
+            <Button fx:id="btnXacNhan" layoutX="350.0" layoutY="1006.0" mnemonicParsing="false" onAction="#onAction_btnXacNhan" prefHeight="39.0" prefWidth="118.0" text="Lưu">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="19.0" layoutY="813.0" prefHeight="94.0" prefWidth="782.0" style="-fx-background-color: #dedcdc; -fx-border-width: 1;">
+               <children>
+                  <Label layoutX="8.0" layoutY="11.0" text="Tên">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtTenDiaDiem" disable="true" layoutX="71.0" layoutY="7.0" prefHeight="25.0" prefWidth="470.0" />
+                  <Label layoutX="562.0" layoutY="11.0" prefHeight="20.0" prefWidth="65.0" text="Sức chứa">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtSucChua" disable="true" layoutX="629.0" layoutY="7.0" prefHeight="25.0" prefWidth="134.0" />
+                  <Label layoutX="7.0" layoutY="51.0" text="Địa chỉ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtDiaChi" disable="true" layoutX="71.0" layoutY="48.0" prefHeight="25.0" prefWidth="694.0" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="19.0" layoutY="923.0" text="Thời gian">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="19.0" layoutY="951.0" prefHeight="40.0" prefWidth="782.0" style="-fx-background-color: #dedcdc; -fx-border-width: 1;">
+               <children>
+                  <Label layoutX="8.0" layoutY="11.0" text="Ngày">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dpNgay" layoutX="71.0" layoutY="8.0" prefHeight="25.0" prefWidth="242.0" />
+                  <Label layoutX="323.0" layoutY="11.0" text="Bắt đầu">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cbbTGBatDau" layoutX="385.0" layoutY="8.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Label layoutX="558.0" layoutY="11.0" text="Kết thúc">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cbbTGKetThuc" layoutX="619.0" layoutY="8.0" prefHeight="25.0" prefWidth="150.0" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="23.0" layoutY="1060.0" text="Phê duyệt">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <HBox layoutX="8.0" layoutY="1099.0" prefHeight="36.0" prefWidth="800.0" style="-fx-background-color: #EBE8F9;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="69.0" text="ID">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="224.0" text="Họ tên">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="234.0" text="Tài khoản">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="184.0" text="Email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="36.0" prefWidth="107.0" text="Trạng thái">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox fx:id="conListUser" layoutX="9.0" layoutY="1144.0" prefHeight="379.0" prefWidth="800.0" style="-fx-background-color: #EBE8F9;" />
+            <Button fx:id="btnLeft" layoutX="361.0" layoutY="1541.0" mnemonicParsing="false" onAction="#onAction_btnLeft" text="&lt;" />
+            <TextField fx:id="txtPage" layoutX="388.0" layoutY="1541.0" prefHeight="25.0" prefWidth="42.0" text=" 1/2" />
+            <Button fx:id="btnRight" layoutX="434.0" layoutY="1541.0" mnemonicParsing="false" onAction="#onAction_btnRight" text="&gt;" />
+            <Button layoutX="383.0" layoutY="711.0" mnemonicParsing="false" onAction="#onAction_btnImage" text="Thay đổi" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

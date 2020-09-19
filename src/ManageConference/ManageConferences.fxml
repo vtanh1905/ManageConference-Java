@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="615.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageConference.ManageConferencesController">
+    <children>
+        <Label layoutX="18.0" layoutY="18.0" text="Quản Lý Hội Nghị">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <HBox layoutX="11.0" layoutY="145.0" prefHeight="36.0" prefWidth="800.0" style="-fx-background-color: #EBE8F9;">
+            <children>
+                <Label alignment="CENTER" prefHeight="36.0" prefWidth="35.0" text="ID">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="36.0" prefWidth="165.0" text="Tên">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="36.0" prefWidth="300.0" text="Địa điểm">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            <Label alignment="CENTER" prefHeight="36.0" prefWidth="182.0" text="Thời gian">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+                <Label alignment="CENTER" prefHeight="36.0" prefWidth="75.0" text="Tham gia">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            <Label alignment="CENTER" prefHeight="36.0" prefWidth="93.0" text="Phê duyệt">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </HBox>
+        <VBox fx:id="conListConferences" layoutX="10.0" layoutY="195.0" prefHeight="379.0" prefWidth="800.0" style="-fx-background-color: #EBE8F9;" />
+        <Button layoutX="330.0" layoutY="581.0" mnemonicParsing="false" onAction="#onAction_btnLeft" text="&lt;" />
+        <TextField fx:id="txtPage" layoutX="361.0" layoutY="581.0" prefHeight="25.0" prefWidth="42.0" text="1/10" />
+        <Button layoutX="410.0" layoutY="581.0" mnemonicParsing="false" onAction="#onAction_btnRight" text="&gt;" />
+      <Button fx:id="btnThemHoiNghi" layoutX="9.0" layoutY="98.0" mnemonicParsing="false" onAction="#onAction_btnThemHoiNghi" text="Thêm hội nghị">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
